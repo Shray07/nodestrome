@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="cart.css">
+   
+</head>
+<body>
+    <div id="headerDiv">
+        <div class="header1">
+            <p><span class="saleSpan">Mother's Day is this Sunday! Get your gift in tme with free curbside pickup. 
+                <button class="previewButton">Gifts</button></p>
+            <div class="india">
+                <img src="https://n.nordstrommedia.com/alias/IN.gif" />
+                <p>India</p>
+            </div>
+        </div>
+        <div class="header2">
+            <div class="logoDiv">
+                <p class="logo" id="homeRedirect">NORDSTROM</p>
+            </div>
+                <div class="search">
+                    <input type="text" placeholder="search for product" id="search">
+                </div>
+                <a href="signin.html">
+                <select name="sign in" id="signIn">
+                    <option id="signInOption" onclick="signIn()">Sign In</option>
+                </select> </a>
+                <a href="cart.html">
+                <div class="navShopIcon" onclick="shoppingCart()">
+                    <img src="https://img.icons8.com/ios/2x/shopping-cart-loaded--v2.gif">
+                    <p id="navCartCount">0</p>
+                </div>
+            </a>
+            </div>
+    </div> 
+    <hr>
+       <div class="navList">
+                <ul class="listStyle">
+                    <li id="sale">Sale</li>
+                    <li id="women">Women</li>
+                    <li id="men">Men</li>
+                    <li id="kids">Kids</li>
+                    <li id="youngadults">Young Adults</li>
+                    <li id="activeWear">Activewear</li>
+                    <li id="home">Home</li>
+                    <li id="beauty">Beauty</li>
+                    <li id="designer">Designer</li>
+                    <li id="gifts">Gifts</li>
+                    <li id="brands">Brands</li>
+                </ul>
+            </div> 
+    <div id="shoppingBagDiv">
+        <div class="shoppingButtons">
+            <button id="shoppingBagButton">Shopping Bag (<span id="cartCount">0</span>)</button>
+            <button id="savedForLater">Saved for later (0)</button>
+        </div>
+            <p class="shoppingHeading">Shopping Bag</p>
+            <div class="giftCard">
+            <img src="https://cdn-icons-png.flaticon.com/512/710/710014.png" />
+            <p>Choose gift options when you check out</p>
+             </div>
+            <p>Items in your bag are not on hold.</p>
+            <hr>
+        <div class="shoppingBadSecDiv">
+            <div class="shoppingBagLeft">
+                <div id="dynamicProductsDiv">
+                     <!-- Cart Items will be dynamically generated here  -->
+                     <div id="cartimg">
+                         <img id="primg" src="" alt="No Products">
+                     </div>
+                     <div id="cartinfo">
+                         <h3 id="pname"></h3>
+                         <h5 id="price"></h5>
+                         <p id="quantity"></p>
+                         <p id="size"></p>
+                         <p id="color"></p>
+                         <p id="type"></p>
+                     </div>
+                </div>
+            </div>
+            <div class="shoppingBagRight">
+                <p>People also viewed</p>
+                <img src="https://n.nordstrommedia.com/id/sr3/84c01a55-b947-4bab-9cff-e7bfdfb81c10.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196"/>
+                <img src="https://n.nordstrommedia.com/id/sr3/06d2ba39-8135-4307-a43f-ec0ef19eaa53.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196"/>
+                <img src="https://n.nordstrommedia.com/id/sr3/9319a0f5-244e-465d-b703-d7691c10ea8c.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196"/>
+                <img src="https://n.nordstrommedia.com/id/sr3/afa948b4-ece8-4f4e-bede-0a82961c38c1.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196"/>
+                <img src="https://n.nordstrommedia.com/id/sr3/2fc56b71-4f21-407f-8631-02009715d288.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196"/>
+            </div>
+        </div>
+    </div>
+    <div class="bagBottomDiv">
+        <div>
+            <p>Accepted Payment Methods</p>
+            <img id="pay" src="" alt="">
+            <p>Need help? Call 1.888.282.6060 or <span class="chatText">chat with us</span></p>
+            <span class="chatText">Ship Internationally?</span>
+        </div>
+        <div class="totalDiv">
+            <div class="totalColumns">
+                <p>Subtotal</p>
+                <p id="subTotal"></p>
+            </div>
+          
+            <div class="finalHorLine"></div>
+           
+            <button id="checkoutButton" onclick="checkOut()">Check Out</button>
+            <p>Get a $60 Bonus note when you see a new Nordstrom credit card. <span class="chatText">Apply now</span></p>
+        </div>
+    </div>
+</div>
+
+   
+    <div class="footerDiv">
+        <div class="footerTextDiv">
+            <div>
+                <h5>Customer Service</h5>
+                <p>Contact Us</p>
+                <p>Order Status</p>
+                <p>Shipping</p>
+                <p>Returns & Exchanges</p>
+                <p>Product Recalls</p>
+            </div>
+            <div>
+                <h5>About Us</h5>
+                <p>Stores & Events</p>
+                <p>Careers</p>
+                <p>Corporate Social Responsibility</p>
+                <p>Diversity, Inclusion & Belonging</p>
+                <p>Get Email Updates</p>
+            </div>
+            <div>
+                <h5>Services</h5>
+                <p>Personal Styling</p>
+                <p>Alterations & Tailoring</p>
+                <p>Spa Nordstrom</p>
+                <p>Nordstrom Restaurants</p>
+                <p>Gift Cards</p>
+            </div>
+            <div>
+                <h5>Nordstrom Card</h5>
+                <p>Pay My Bill</p>
+                <p>Manage My Nordstrom Card</p>
+            </div>
+            <div>
+                <h5>Nordstrom, Inc</h5>
+                <p>Nordstrom Rack</p>
+                <p>Nordstrom Canada</p>
+                <p>Trunk Club</p>
+                <p>Investor Relations</p>
+                <p>Press Releases</p>
+            </div>
+            <div>
+                <h5>Nordstrom, Inc</h5>
+                <p>Nordstrom Rack</p>
+                <p>Nordstrom Canada</p>
+                <p>Trunk Club</p>
+                <p>Investor Relations</p>
+                <p>Press Releases</p>
+            </div>
+        </div>
+        <div class="termsOfService">
+            <p>Your Privacy Rights</p>
+            <p>Do Not Sell My Info</p>
+            <p>Terms & Conditions</p>
+            <p>Interes-Based Ads</p>
+            <p>@2021 Nordstrom, Inc.</p>
+        </div>
+    </div>
+</body>
+<script src="cart.js"></script>
+</html>
