@@ -1,0 +1,189 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    position: relative;
+}
+
+#container {
+    display: flex;
+    gap: 20px;
+    width: 98%;
+    margin: auto;
+    margin-top: 100px;
+    position: absolute;
+}
+
+#filters {
+    border: 0px solid rgb(197, 190, 190);
+    height: 300px;
+    width: 20%;
+    position: fixed;
+    margin: auto;
+    margin-left: 30px;
+ 
+    
+
+}
+
+
+#filters>select {
+    display: block;
+    height: 60px;
+    width: 100%;
+    padding: 10px;
+    font-size: medium;
+    font-weight: 500;
+    cursor: pointer;
+    border: 1px solid rgb(212, 204, 204);
+    border-radius: 4px;
+
+}
+
+#filters>select>option{
+    font-size: medium;
+    padding: 10px;
+}
+
+
+#products {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(30, auto);
+    column-gap: 10px;
+    row-gap: 40px;
+    width: 100%;
+    margin: auto;
+    margin-left: 340px;
+
+}
+
+#products>div {
+    line-height: 30px;
+    padding-left: 10px;
+}
+
+img {
+    height: 400px;
+    width: 100%;
+}
+
+#products>div>div {
+    display: flex;
+    gap: 20px;
+}
+
+#products>div>h3+p {
+    color: red;
+    font-size: 20px;
+
+}
+
+#products>div>div>p+p {
+    text-decoration: line-through;
+    color: grey;
+
+}
+
+#products>div>div>p {
+    color: grey;
+}
+
+#products>div>h3+h3 {
+    font-family: sans-serif;
+    font-weight: 400;
+    color: grey;
+}
+
+/* #products>div>div+p {
+    color: grey;
+} */
+h4 {
+    font-size: 20px;
+    color: grey;
+}
+
+@media all and (min-width:451px) and (max-width: 750px) {
+
+    #container {
+        display: flex;
+        gap: 10px;
+        width: 100%;
+        margin: auto;
+        margin-top: 100px;
+        position: absolute;
+    }
+
+    #filters {
+        border: 0px solid rgb(197, 190, 190);
+        height: auto;
+        width: auto;
+        position: fixed;
+        margin: auto;
+    }
+
+    #products {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: repeat(30, auto);
+        width: 100%;
+        margin: auto;
+
+    }
+
+    #products>div {
+        line-height: 22px;
+        padding-left: 5px;
+        height: auto;
+        font-size: 10px;
+        width: 100%;
+        margin: auto;
+
+    }
+
+    img {
+        height: 100px;
+        width: 200px;
+        margin: auto;
+    }
+}
+
+@media all and (min-width:100px) and (max-width:450px) {
+    #container {
+        display: flex;
+        gap: 5px;
+        width: 100%;
+        margin: auto;
+        margin-top: 100px;
+        position: absolute;
+    }
+
+    #products {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(40, auto);
+        width: 100%;
+        margin: auto;
+      
+
+    }
+
+    #products>div {
+        line-height: 30px;
+        padding-left: 10px;
+        height: auto;
+        font-size: 10px;
+        width: 100%;
+        margin: auto;
+    }
+
+    img {
+        height: 50px;
+        width: 100px;
+        margin: auto;
+    }
+
+}
+
