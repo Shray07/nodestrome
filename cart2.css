@@ -1,0 +1,100 @@
+#products1>div {
+    display: flex;
+    gap: 100px;
+    border: 1px solid teal;
+    width: 500px;
+    margin: auto;
+    margin-top: 20px;
+    /* margin: auto; */
+
+}
+
+.img2 {
+    height: 200px;
+
+}
+
+#products1>div>div {
+    display: block;
+    gap: 50px;
+    font-size: 25px;
+}
+
+h3+p {
+    color: red;
+}
+
+#products1>div>div>div {
+    color: gray;
+}
+
+h4+h3+h3 {
+    color: grey;
+    font-weight: 100px;
+}
+
+p+p {
+    text-decoration: line-through;
+}
+
+#counter {
+    font-size: 30px;
+    justify-content: end;
+    width: 98%;
+    display: flex;
+    margin: auto;
+}
+
+#flex {
+    display: flex;
+    gap: 100px;
+}
+
+#itemt {
+    border: 1px solid teal;
+    font-size: 30px;
+    width: 400px;
+    height: 500px;
+    padding: 20px;
+    line-height: 20px;
+    margin: auto;
+
+
+}
+
+.acprice {
+    font-family: sans-serif;
+    font-weight: 400;
+    color: grey;
+}
+
+.discount {
+    font-family: sans-serif;
+    font-weight: 400;
+    color: grey;
+}
+
+#btn {
+    margin-bottom: 20px;
+    padding: 10px;
+    color: white;
+    background-color: rgb(243, 83, 83);
+    border-radius: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+#btn2 {
+    background-color: rgb(45, 44, 44);
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 10px;
+    height: 80px;
+    width: 90%;
+    margin: auto;
+    margin-left: 20px;
+    margin-top: 100px;
+}

@@ -6,10 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./navbar2 ok/be.css">
     <link rel="stylesheet" href="productstyle.css">
+    <!-- <link rel="stylesheet" href="cart.css"> -->
 </head>
 
 <body>
+    <div id="navibar_set"></div>
 
     <div id="container">
 
@@ -57,9 +60,22 @@
         </div>
     </div>
 
-
+    <div class="footerDiv"></div>
 </body>
 
 </html>
 
 <script src="products.js"></script>
+
+<script type="module">
+
+    import navibar_set from "./components/navbar.js"
+
+    document.querySelector("#navibar_set").innerHTML = navibar_set()
+
+
+    import { footerDiv } from "./components/footer.js"
+
+    document.querySelector(".footerDiv").innerHTML = footerDiv()
+
+</script>

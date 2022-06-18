@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cart2.css">
+</head>
+
+<body>
+    <div id="counter">Bag(0)</div>
+    <div id="flex">
+        <div id="products1"></div>
+
+        <div id="itemt">
+            <h4 class="acprice">Actual Price</h4>
+            <h4 class="discount">Discount</h4>
+            <div id="itemtotal"></div>
+            <button id="btn2"><a href="payment.html">Place order</a></button>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
+
+<script>
+
+    var count = JSON.parse(localStorage.getItem("countitem")) || 0
+    document.querySelector("#counter").innerText = "Bag:" + "(" + count + ")"
+
+
+    var arr1 = JSON.parse(localStorage.getItem("cartlist")) || []
+
+    disp(arr1)
+    function disp(data2) {
+
+        var products1 = document.querySelector("#products1")
+
+        data2.forEach(function (elem, index) {
+
+            var div = document.createElement("div")
+
+            var img = document.createElement("img")
+            img.setAttribute("class", "img2")
+            img.src = elem.img
+
+            var div2 = document.createElement("div")
+
+            var color = document.createElement("h4")
+            color.innerText = "color :  " + elem.color
+
+            var brand = document.createElement("h3")
+            brand.innerText = elem.brand
+
+            var name = document.createElement("h3")
+            name.innerText = elem.name
+
+            var price = document.createElement("p")
+            price.innerText = "$" + elem.price
+
+            var div1 = document.createElement("div")
+
+            var p1 = document.createElement("p")
+            p1.innerText = elem.price_offer
+
+            var p2 = document.createElement("p")
+            p2.innerText = elem.price_cutoff
+
+            var btn = document.createElement("button")
+            btn.setAttribute("id", "btn")
+            btn.innerText = "Remove"
+            btn.addEventListener("click", function () {
+                del(elem, index)
+            })
+
+
+            div1.append(p1, p2)
+
+            div2.append(color, brand, name, price, div1, btn)
+
+            div.append(img, div2)
+
+            products1.append(div)
+
+
+        })
+
+    }
+
+
+    function del(elem, index) {
+
+        arr1.splice(index, 1)
+        localStorage.setItem("cartlist", JSON.stringify(arr1))
+
+        count--
+        document.querySelector("#counter").innerText = "Count" + (count)
+        localStorage.setItem("countitem", JSON.stringify(count))
+        window.location.reload()
+    }
+
+
+    function priceapp() {
+        var bag = ""
+        for (var i = 0; i < arr1.length; i++) {
+            bag = (arr1[i].price) + " " + "," + bag
+            console.log(bag)
+            document.querySelector(".acprice").innerText = "Actual Price : " + "=" + " " + "$" + bag
+        }
+
+    }
+    priceapp()
+    document.querySelector(".discount").innerText = "Discount = " + 0
+
+
+
+
+    function calculation() {
+
+        var sum = 0;
+        for (var i = 0; i < arr1.length; i++) {
+            sum = sum + Number(arr1[i].price)
+        }
+        // console.log(sum)
+
+        document.querySelector("#itemtotal").innerText = "Total Price : " + "$" + sum
+
+
+
+    }
+
+    calculation()
+
+</script>

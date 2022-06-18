@@ -1041,7 +1041,7 @@ var products_list = [
 
 ]
 
-localStorage.setItem("products_list", JSON.stringify(products_list))
+// localStorage.setItem("products_list", JSON.stringify(products_list))
 
 // var product_lists = JSON.parse(localStorage.getItem("products_list")) || []
 

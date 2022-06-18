@@ -1,3 +1,4 @@
+
 #offer{
     display: flex;
     justify-content: center;
@@ -133,4 +134,10 @@
       width: auto;
       height: auto;
     }
+  }
+
+
+  a{
+    text-decoration: none;
+    color: black
   }

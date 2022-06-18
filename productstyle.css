@@ -12,8 +12,8 @@ body {
     gap: 20px;
     width: 98%;
     margin: auto;
-    margin-top: 100px;
-    position: absolute;
+    /* margin-top: 220px; */
+    /* position: absolute; */
 }
 
 #filters {
@@ -23,8 +23,8 @@ body {
     position: fixed;
     margin: auto;
     margin-left: 30px;
- 
-    
+    margin-top: 200px;
+
 
 }
 
@@ -42,7 +42,7 @@ body {
 
 }
 
-#filters>select>option{
+#filters>select>option {
     font-size: medium;
     padding: 10px;
 }
@@ -57,6 +57,7 @@ body {
     width: 100%;
     margin: auto;
     margin-left: 340px;
+    margin-top: 200px;
 
 }
 
@@ -104,6 +105,56 @@ h4 {
     font-size: 20px;
     color: grey;
 }
+
+
+
+
+
+
+
+
+.footerDiv {
+    height: 300px;
+    width: 100%;
+    /* border: 1px solid black; */
+    margin-top: 50px;
+    background-color: rgb(246, 246, 246);
+}
+
+.footerTextDiv {
+    height: 250px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    /* border: 1px solid red; */
+}
+
+.footerTextDiv>div {
+    height: 250px;
+    width: 15.5%;
+    /* border: 1px solid blue; */
+}
+
+.footerTextDiv p {
+    font-size: 13px;
+}
+
+
+
+
+
+
+
+#navibar_set {
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    margin: auto;
+    margin-top: 10px;
+
+}
+
+
 
 @media all and (min-width:451px) and (max-width: 750px) {
 
@@ -166,7 +217,7 @@ h4 {
         grid-template-rows: repeat(40, auto);
         width: 100%;
         margin: auto;
-      
+
 
     }
 
@@ -186,4 +237,3 @@ h4 {
     }
 
 }
-

@@ -593,6 +593,44 @@
 }
 
 
+#navibar_set{
+    width: 100%;
+    background-color: white;
+    margin: auto;
+
+}
+
+#position{
+    margin-top: -200px;
+}
 
 
 
+
+
+
+.footerDiv {
+    height: 300px;
+    width: 100%;
+    /* border: 1px solid black; */
+    margin-top: 50px;
+    background-color: rgb(246, 246, 246);
+}
+
+.footerTextDiv {
+    height: 250px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    /* border: 1px solid red; */
+}
+
+.footerTextDiv>div {
+    height: 250px;
+    width: 15.5%;
+    /* border: 1px solid blue; */
+}
+
+.footerTextDiv p {
+    font-size: 13px;
+}

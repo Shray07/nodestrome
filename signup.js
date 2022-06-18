@@ -55,6 +55,8 @@ function  validation(e){
     alert("All Field Required")
 }else{
     submitDetails(event);
+    alert("Successfully signup")
+    window.location.href="index.html"
 }
 }
 
@@ -76,5 +78,7 @@ function myFunction() {
     alert("Field Required")
 }else{
     submitDetails(event);
+    alert("Successfully signup")
+    window.location.href="index.html"
 }
 }

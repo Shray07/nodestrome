@@ -1,11 +1,13 @@
-document.querySelector("form").addEventListener("submit",checkout)
+document.querySelector("form").addEventListener("submit", checkout)
 
 
-function checkout()
-{
-  window.location.href ='index.html'
-    alert("Your Order is Confirmed!");
-   
+function checkout() {
+
+  alert("Your Order is Confirmed!");
+  window.location.reload()
+
+  // window.location.href = "index.html";
+
 }
 
 var szarr = JSON.parse(localStorage.getItem("userObj3"))
@@ -15,4 +17,4 @@ acd.innerText = (szarr.length)
 
 var nme = JSON.parse(localStorage.getItem("userData2"))
 var em = document.querySelector("#signInOption")
-em.innerText = "Hii "+nme[nme.length-1].FirstName  
+em.innerText = "Hii " + nme[nme.length - 1].FirstName  
