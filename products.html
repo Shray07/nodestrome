@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="productstyle.css">
+</head>
+
+<body>
+
+    <div id="container">
+
+        <div id="filters">
+            <select id="price_filter" onchange="pricefilt()">
+                <option>Price</option>
+                <option value="LTH">Low to High</option>
+                <option value="HTL">High to Low</option>
+            </select>
+            <select id="brand_filter" onchange="branndfilt()">
+                <option>Brand</option>
+                <option value="Nike">Nike</option>
+                <option value="adidas">adidas</option>
+                <option value="Champion">Champion</option>
+                <option value="JACK&JONES">Jack&jones</option>
+                <option value="Calvin Klein">Calvin Klein</option>
+            </select>
+            <select id="color_filter" onchange="colorfilt()">
+                <option>Color</option>
+                <option value="black">Black</option>
+                <option value="grey">Grey</option>
+                <option value="white">White</option>
+                <option value="orange">Orange</option>
+                <option value="green">Green</option>
+                <option value="pink">Pink</option>
+            </select>
+            <select id="type_filter" onchange="typefilt()">
+                <option value="">Type</option>
+                <option value="T-shirts">T-shirts</option>
+                <option value="Jackets">Jackets</option>
+                <option value="Blazers">Blazers</option>
+                <option value="pants">pants</option>
+            </select>
+            <select id="size_filter" onchange="sizefilt()">
+                <option value="">Size</option>
+                <option value="s">small</option>
+                <option value="m">medium</option>
+                <option value="l">large</option>
+            </select>
+
+        </div>
+
+        <div id="products">
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>
+
+<script src="products.js"></script>
