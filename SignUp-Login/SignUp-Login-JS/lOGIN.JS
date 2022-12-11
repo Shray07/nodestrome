@@ -16,7 +16,7 @@ function submitProduct(e){
       arr.push(p);
       localStorage.setItem('userEmail',JSON.stringify(arr));
       console.log(arr);
-      window.location.href = './Signup.html'
+      window.location.href = 'Signup.html'
 
 }
 
