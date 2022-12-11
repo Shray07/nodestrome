@@ -3,4 +3,5 @@ This is an American E-commerce website Nordstrom (clone). Nordstrom, Inc. is an 
 
 
 #HomePage
-![image](https://user-images.githubusercontent.com/70993839/206912173-6affdc59-b97c-47fa-8ba8-30ef5f134cd2.png)
+![image](https://user-images.githubusercontent.com/70993839/206912301-0ac723b8-a2ee-401c-b9bd-1b2861e75be2.png)
+
