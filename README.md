@@ -1,4 +1,4 @@
-# nodestrome
+# nordstrom rack
 This is an American E-commerce website Nordstrom (clone). Nordstrom, Inc. is an American luxury department store chain headquartered in Seattle, Washington and founded by John W. Nordstrom and Carl F. Wallin in 1901. The original Wallin &amp; Nordstrom store operated exclusively as a shoe store, and a second Nordstrom shoe store opened in 1923. 
 
 
